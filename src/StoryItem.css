@@ -1,0 +1,32 @@
+.storyItem {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 8em;
+  height: 12em;
+  overflow: hidden;
+  border-radius: 1em;
+  box-shadow: 0 0 0.5em black;
+}
+.storyItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0.2em black;
+}
+.storyItem:hover > .storyItem__details {
+  opacity: 0;
+}
+.storyItem__details {
+  height: 100%;
+  padding: 1em 0.5em;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: small;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.storyItem__details__avatar {
+  border: 2px solid #ccc;
+}

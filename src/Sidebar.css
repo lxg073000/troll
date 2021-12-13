@@ -1,0 +1,16 @@
+.sidebar {
+  padding: 1em;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.sidebar__header {
+  display: flex;
+  padding-bottom: 1em;
+  gap: 1em;
+  color: white;
+  align-items: center;
+  border-bottom: 0.5em solid #222;
+}

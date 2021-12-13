@@ -1,0 +1,100 @@
+.header {
+  background: black;
+  box-shadow: 0 0.3em rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0.5em 0 1em 0;
+}
+.header > header {
+  margin: 0 auto;
+  padding: 0.25em 0;
+  display: flex;
+  flex: 1;
+  max-width: 1200px;
+  align-items: center;
+  color: white;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+}
+.header__left > img {
+  height: 2em;
+  margin-left: 0.5em;
+}
+.header__input {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+}
+.header__input > input {
+  border-radius: 1em;
+  margin-left: 0.3em;
+  padding: 0.5em 1em;
+  background: #ddd;
+}
+.header__input > input:focus {
+  border-radius: 1em;
+  margin-left: 0.3em;
+  padding: 0.5em 1em;
+  background: #eee;
+}
+.header__middle {
+  display: flex;
+  flex: 1;
+  gap: 1em;
+  margin: 0 auto;
+  padding: 0 1em;
+  justify-content: space-evenly;
+}
+.header__option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1em;
+  border-radius: 1em;
+  cursor: pointer;
+  position: relative;
+}
+.header__option > p {
+  color: transparent;
+  position: absolute;
+  top: 25%;
+  transition: color 0.1s ease;
+}
+.header__option {
+  color: #eee;
+}
+.header__option:hover {
+  background: #73861f;
+  color: #eee;
+}
+.header__option:hover > p {
+  color: white;
+}
+.header__option:hover > .MuiSvgIcon-root {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.header__right {
+  display: flex;
+  padding: 0 1em;
+  margin-left: auto;
+}
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.header__info > p {
+  margin-left: 0.5em;
+}
+.header__info > .MuiIconButton-root {
+  color: #eee;
+}
+.header__info > .MuiIconButton-root:hover {
+  color: #cdf325;
+}

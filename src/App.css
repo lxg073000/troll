@@ -3,5 +3,18 @@
   padding: 0;
   box-sizing: border-box;
   outline: 0;
+  border: 0;
   text-decoration: none;
+  transition: box-shadow 0.1s ease, opacity 0.2s ease, color 0.1s ease-in,
+    background 0.3s ease-in, transform 0.2s ease;
+}
+
+.app {
+  background: #cdf325;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  max-width: 1200px;
+  margin: 1em auto;
 }

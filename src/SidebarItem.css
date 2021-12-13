@@ -1,0 +1,27 @@
+.sidebarItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+  padding: 1em;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1em;
+}
+.sidebarItem:hover {
+  background: #c87cfb;
+  color: black;
+}
+.sidebarItem > img {
+  height: 3em;
+  margin-right: 1em;
+}
+.sidebarItem:hover > img {
+  filter: opacity(0.5);
+}
+
+.sidebarItem > p {
+  font-size: medium;
+}

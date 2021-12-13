@@ -1,0 +1,8 @@
+.story {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  gap: 1.5em;
+  padding: 1em;
+  justify-content: center;
+}
