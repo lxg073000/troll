@@ -5,11 +5,10 @@ import TrollLogo from "./assets/icons/troll_1.png";
 
 import { Avatar, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import TurnedInIcon from "@mui/icons-material/TurnedIn";
-import BookmarksIcon from "@mui/icons-material/Bookmarks";
-import GroupIcon from "@mui/icons-material/Group";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import VerifiedIcon from "@mui/icons-material/Verified";
-import CampaignIcon from "@mui/icons-material/Campaign";
 import ClassIcon from "@mui/icons-material/Class";
 import ForumIcon from "@mui/icons-material/Forum";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -24,24 +23,24 @@ function Header() {
         </div>
         <div className="header__input">
           <SearchIcon />
-          <input placeHolder="Search Troll" />
+          <input placeholder="Search Troll" />
         </div>
         <div className="header__middle">
           <div className="header__option">
-            <TurnedInIcon fontSize="large" />
-            <p>Tasks</p>
+            <DashboardIcon fontSize="large" />
+            <p>Dashboard</p>
           </div>
           <div className="header__option">
-            <BookmarksIcon fontSize="large" />
-            <p>Goals</p>
+            <CalendarTodayIcon fontSize="large" />
+            <p>Calendar</p>
           </div>
           <div className="header__option">
             <VerifiedIcon fontSize="large" />
             <p>Challenges</p>
           </div>
           <div className="header__option">
-            <CampaignIcon fontSize="large" />
-            <p>Events</p>
+            <AssignmentIndIcon fontSize="large" />
+            <p>Mentor</p>
           </div>
           <div className="header__option">
             <ClassIcon fontSize="large" />
@@ -50,10 +49,11 @@ function Header() {
         </div>
         <div className="header__right">
           <div className="header__info">
-            <Avatar />
-            <IconButton>
-              <GroupIcon />
-            </IconButton>
+            <Avatar
+              src={
+                "https://media-exp1.licdn.com/dms/image/D4D35AQHt3qjy_TYjfg/profile-framedphoto-shrink_200_200/0/1636344162160?e=1639458000&v=beta&t=NnKQ5kkcI0vqYE92H9XU9_s9j9hrA8Iqq15Mbx17T4Y"
+              }
+            />
             <IconButton>
               <ForumIcon />
             </IconButton>

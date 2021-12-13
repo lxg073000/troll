@@ -1,0 +1,16 @@
+/* .widget {
+  height: 100%;
+} */
+
+.card > img {
+  height: 200%;
+  margin-right: 1em;
+  box-shadow: 0.2em 0.2em rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+.widget__info:not(h1) {
+  font-size: small;
+}
+.widget__info > h1 {
+  line-height: 2;
+}

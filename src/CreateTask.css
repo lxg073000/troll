@@ -1,0 +1,48 @@
+.createTask {
+  height: fit-content;
+  min-width: 500px;
+}
+/* .createTask img {
+  object-fit: cover;
+  height: 1em;
+} */
+.createTask > form {
+  flex: 1 1;
+  display: flex;
+  text-align: center;
+  gap: 1em;
+  flex-direction: column;
+}
+.createTask > form > input {
+  display: block;
+  padding: 1em;
+  border-radius: 2em;
+  width: 100%;
+}
+.createTask .title {
+}
+.createTask .priority {
+  -webkit-appearance: none;
+  display: block;
+  padding: 1em;
+  border-radius: 2em;
+  width: 100%;
+  background: #333;
+}
+.createTask .priority:hover {
+  background: black;
+}
+.createTask .priority::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #c87cfb;
+  border-radius: 50%;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.createTask .submit {
+  background: #ffad00;
+  color: white;
+}

@@ -2,7 +2,10 @@ import "./App.css";
 import Header from "./Header.js";
 import Sidebar from "./Sidebar.js";
 import Story from "./Story.js";
-import Widgets from "./Widgets.js";
+import Feed from "./Feed.js";
+import Modal from "./Modal.js";
+import CreateTask from "./CreateTask.js";
+// import Widgets from "./Widgets.js";
 
 function App() {
   return (
@@ -10,8 +13,15 @@ function App() {
       <Header />
       <main>
         <Sidebar />
-        <Story />
-        <Widgets />
+        <Modal>
+          <CreateTask />
+        </Modal>
+        <section>
+          <Story />
+          <Feed />
+        </section>
+
+        {/* <Widgets /> */}
       </main>
     </div>
   );
