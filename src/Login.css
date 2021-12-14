@@ -1,0 +1,10 @@
+.login {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.login__form {
+  height: 10em;
+  background: purple;
+}

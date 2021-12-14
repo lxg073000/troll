@@ -4,13 +4,19 @@ import Sidebar from "./Sidebar.js";
 import Story from "./Story.js";
 import Feed from "./Feed.js";
 import Modal from "./Modal.js";
+import Login from "./Login.js";
 import CreateTask from "./CreateTask.js";
+import { useState } from "react";
 // import Widgets from "./Widgets.js";
 
 function App() {
-  return (
+  const [user, setUser] = useState(null);
+  return !user ? (
+    <Login setUser={setUser} />
+  ) : (
     <div className="app">
       <Header />
+
       <main>
         <Sidebar />
         <Modal>
@@ -25,6 +31,7 @@ function App() {
       </main>
     </div>
   );
+
   /** HEADER */
 }
 
