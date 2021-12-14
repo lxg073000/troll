@@ -6,13 +6,13 @@ import Feed from "./Feed.js";
 import Modal from "./Modal.js";
 import Login from "./Login.js";
 import CreateTask from "./CreateTask.js";
-import { useState } from "react";
+import { useStateValue } from "./StateProvider";
 // import Widgets from "./Widgets.js";
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [{ user }, dispatch] = useStateValue();
   return !user ? (
-    <Login setUser={setUser} />
+    <Login />
   ) : (
     <div className="app">
       <Header />
