@@ -38,9 +38,9 @@
   max-width: 1440px;
   /* height:  */
   margin: 0 auto;
+  height: calc(100vh - 72px);
 }
 section {
-  padding: 1em;
   display: flex;
   flex-direction: column;
   gap: 1em;

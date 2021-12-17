@@ -5,24 +5,24 @@ import { createPortal } from "react-dom";
 import "./ModalContainer.css";
 
 function ModalContainer({ isOpen, setIsOpen, children }) {
-  //   return isOpen === false
-  //     ? null
-  //     : createPortal(
-  //         <div className="modalContainer">{children}</div>,
-  //         document.getElementById("app-body")
-  //       );
-  // }
-  return (
-    <ClickAwayListener onClickAway={() => setIsOpen((prev) => !prev)}>
-      <div>
-        {isOpen ? (
-          <Portal className="modalContainer">
-            <Box>{children}</Box>
-          </Portal>
-        ) : null}
-      </div>
-    </ClickAwayListener>
-  );
+  return isOpen === false
+    ? null
+    : createPortal(
+        <div className="modalContainer">{children}</div>,
+        document.getElementById("app-body")
+      );
+
+  // return (
+  //   <ClickAwayListener onClickAway={() => setIsOpen((prev) => !prev)}>
+  //     <div>
+  //       {isOpen ? (
+  //         <Portal>
+  //           <Box className="modalContainer">{children}</Box>
+  //         </Portal>
+  //       ) : null}
+  //     </div>
+  //   </ClickAwayListener>
+  // );
 }
 
 export default ModalContainer;
