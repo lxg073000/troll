@@ -19,7 +19,7 @@ function CreateTask() {
           onChange={(e) => {
             setPriority(e.target.value);
           }}
-          class="priority"
+          className="priority"
           id="myRange"
         />
         <input className="submit" type="submit" value="Create Task" />

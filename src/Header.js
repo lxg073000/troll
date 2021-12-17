@@ -12,13 +12,15 @@ import VerifiedIcon from "@mui/icons-material/Verified";
 import ClassIcon from "@mui/icons-material/Class";
 import ForumIcon from "@mui/icons-material/Forum";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+  const [{ user }] = useStateValue();
   return (
     <div className="header">
       <header>
         <div className="header__left">
-          <h1>Troll</h1>
+          <h1 className="logo">Troll</h1>
           <img src={TrollLogo} alt="" />
         </div>
         <div className="header__input">
@@ -49,11 +51,7 @@ function Header() {
         </div>
         <div className="header__right">
           <div className="header__info">
-            <Avatar
-              src={
-                "https://media-exp1.licdn.com/dms/image/D4D35AQHt3qjy_TYjfg/profile-framedphoto-shrink_200_200/0/1636344162160?e=1639458000&v=beta&t=NnKQ5kkcI0vqYE92H9XU9_s9j9hrA8Iqq15Mbx17T4Y"
-              }
-            />
+            <Avatar src={user.photoURL} />
             <IconButton>
               <ForumIcon />
             </IconButton>

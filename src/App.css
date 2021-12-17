@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&family=Luckiest+Guy&display=swap");
+:root {
+  --neutral-light: #f5f5f6;
+  --neutral-dark: #e1e2e1;
+  --primary: #647045;
+  --primary-light: #929e71;
+  --primary-dark: #39451d;
+  --secondary: #ffb217;
+  --secondary-light: #ffe454;
+  --secondary-dark: #c78300;
+  --font-logo: "Luckiest Guy", cursive;
+  --font-logo-alt: "Luckiest Guy", cursive;
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,13 +21,18 @@
   transition: box-shadow 0.1s ease, opacity 0.2s ease, color 0.1s ease-in,
     background 0.3s ease-in, transform 0.2s ease;
 }
+.logo {
+  font-family: var(--font-logo);
+  /* font-variant: small-caps; */
+  font-size: xx-large;
+  letter-spacing: 3px;
+}
 
 .app {
   background: #cdf325;
   height: 100vh;
 }
-main {
-  position: relative;
+.app > main {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   max-width: 1440px;
@@ -26,6 +44,10 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+#app-body {
+  position: relative;
 }
 
 .card {

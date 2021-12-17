@@ -19,13 +19,7 @@ function Login() {
   };
   return (
     <div className="login">
-      <div className="login__form">
-        <div className="login_logo">
-          <img src={Troll} alt="logo" />
-          <h1>Troll</h1>
-          <Button onClick={signIn}>Sign In</Button>
-        </div>
-      </div>
+      <button onClick={signIn}>Google LogIn</button>
     </div>
   );
 }

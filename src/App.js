@@ -3,14 +3,13 @@ import Header from "./Header.js";
 import Sidebar from "./Sidebar.js";
 import Story from "./Story.js";
 import Feed from "./Feed.js";
-import Modal from "./Modal.js";
 import Login from "./Login.js";
-import CreateTask from "./CreateTask.js";
 import { useStateValue } from "./StateProvider";
 // import Widgets from "./Widgets.js";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
+  console.log(user);
   return !user ? (
     <Login />
   ) : (
@@ -19,11 +18,8 @@ function App() {
 
       <main>
         <Sidebar />
-        <Modal>
-          <CreateTask />
-        </Modal>
-        <section>
-          <Story />
+        <section id="app-body">
+          {/* <Story /> */}
           <Feed />
         </section>
 
