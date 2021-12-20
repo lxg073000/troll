@@ -16,7 +16,7 @@
   color: black;
 }
 .sidebarItem > img {
-  height: 3em;
+  height: 2em;
   margin-right: 1em;
 }
 .sidebarItem:hover > img {

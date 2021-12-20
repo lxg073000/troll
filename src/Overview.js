@@ -1,5 +1,5 @@
 import React from "react";
-import Widget from "./Widget.js";
+// import Widget from "./Widget.js";
 import "./Overview.css";
 
 // import { TASKS, MISSIONS } from "./data/collections";

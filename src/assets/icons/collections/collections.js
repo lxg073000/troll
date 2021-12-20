@@ -3,11 +3,11 @@ import habbits from "./habbits.png";
 import missions from "./missions.png";
 import challenges from "./challenges.png";
 
-const collections = {
+export const collections = {
   tasks,
   habbits,
   missions,
   challenges,
 };
 
-export default collections;
+// export default collections;

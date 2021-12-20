@@ -34,20 +34,14 @@
 }
 .app > main {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
   max-width: 1440px;
-  /* height:  */
   margin: 0 auto;
-  height: calc(100vh - 72px);
 }
 section {
   display: flex;
   flex-direction: column;
   gap: 1em;
-}
-
-#app-body {
-  position: relative;
 }
 
 .card {

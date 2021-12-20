@@ -8,9 +8,28 @@
 
 .sidebar__header {
   display: flex;
+  flex-direction: column;
   padding-bottom: 1em;
   gap: 1em;
   color: white;
   align-items: center;
   border-bottom: 0.5em solid #222;
+  text-align: center;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.sidebar__content {
+  display: flex;
+  gap: 1em;
+}
+
+.cta {
+  font-size: 2em;
+  font-weight: 900;
 }

@@ -1,16 +1,23 @@
 import React, { useState } from "react";
-import ICONS from "./assets/icons/collections/collections";
+import * as icons from "./assets/icons/exports";
 import "./CreateTask.css";
 
 function CreateTask() {
   const [priority, setPriority] = useState(0);
+  const [title, setTitle] = useState("");
+  const createTask = () => {};
   return (
     <div
-      className="createTask card"
-      style={{ backgroundImage: `url(${ICONS.tasks})` }}
+      className="createTask card hm"
+      style={{ backgroundImage: `url(${icons.task})` }}
     >
       <form>
-        <input className="title" placeholder="What's your next task?" />
+        <input
+          className="title"
+          placeholder="What's your next task?"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
         <input
           type="range"
           min="1"
@@ -22,7 +29,12 @@ function CreateTask() {
           className="priority"
           id="myRange"
         />
-        <input className="submit" type="submit" value="Create Task" />
+        <input
+          className="submit"
+          type="submit"
+          value="Create Task"
+          onClick={createTask}
+        />
       </form>
     </div>
   );

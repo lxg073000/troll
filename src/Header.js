@@ -3,6 +3,8 @@ import "./Header.css";
 
 import TrollLogo from "./assets/icons/troll_1.png";
 
+import Sidebar from "./Sidebar";
+
 import { Avatar, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import DashboardIcon from "@mui/icons-material/Dashboard";
@@ -61,6 +63,7 @@ function Header() {
           </div>
         </div>
       </header>
+      <Sidebar />
     </div>
   );
 }

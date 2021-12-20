@@ -1,18 +1,20 @@
-import React, { useState } from "react";
-import ModalContainer from "./ModalContainer";
+import React, { useRef } from "react";
+import MyModal from "./MyModal";
+
 import "./SidebarItem.css";
 
 function SidebarItem({ img, title, Modal }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const modalRef = useRef();
+  const isOpen = () => {
+    modalRef.current.isOpen();
+  };
   return (
     <>
-      <div className="sidebarItem" onClick={() => setIsOpen((prev) => !prev)}>
+      <div className="sidebarItem" onClick={isOpen}>
         <img src={img} alt={title} />
         <p>{title}</p>
       </div>
-      <ModalContainer setIsOpen={setIsOpen} isOpen={isOpen}>
-        {<Modal />}
-      </ModalContainer>
+      <MyModal ref={modalRef}>{<Modal />}</MyModal>
     </>
   );
 }

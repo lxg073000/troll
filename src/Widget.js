@@ -1,5 +1,5 @@
 import React from "react";
-import collections from "./assets/icons/collections/collections.js";
+import { collections } from "./assets/icons/collections/collections.js";
 
 import "./Widget.css";
 
