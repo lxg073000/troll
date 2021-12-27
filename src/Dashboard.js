@@ -1,23 +1,20 @@
-import "./App.css";
-import Header from "./Header.js";
-// import Sidebar from "./Sidebar.js";
+import "./Dashboard.css";
+import Sidebar from "./Sidebar.js";
 // import Story from "./Story.js";
 import Feed from "./Feed.js";
 import Login from "./Login.js";
 import { useStateValue } from "./StateProvider";
 // import Widgets from "./Widgets.js";
 
-function App() {
+function Dashboard() {
   const [{ user }] = useStateValue();
   return !user ? (
     <Login />
   ) : (
-    <div className="app">
-      <Header />
-
+    <div className="dashboard">
       <main>
-        {/* <Sidebar /> */}
-        <section id="app-body">
+        <Sidebar />
+        <section id="dashboard-body">
           {/* <Story /> */}
           <Feed />
         </section>
@@ -30,4 +27,4 @@ function App() {
   /** HEADER */
 }
 
-export default App;
+export default Dashboard;

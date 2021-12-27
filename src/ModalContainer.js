@@ -7,7 +7,7 @@ function ModalContainer({ isOpen, setIsOpen, children }) {
     ? null
     : createPortal(
         <div className="modalContainer">{children}</div>,
-        document.getElementById("app-body")
+        document.getElementById("dashboard-body")
       );
 }
 

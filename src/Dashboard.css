@@ -28,11 +28,10 @@
   letter-spacing: 3px;
 }
 
-.app {
+.dashboard {
   background: #cdf325;
-  height: 100vh;
 }
-.app > main {
+.dashboard > main {
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
   max-width: 1440px;

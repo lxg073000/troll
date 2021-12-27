@@ -59,6 +59,13 @@
   cursor: pointer;
   position: relative;
 }
+/* .header__option a {
+  text-decoration: none;
+  color: inherit;
+}
+.header__option a:visited {
+  text-decoration: none;
+} */
 .header__option > p {
   color: transparent;
   position: absolute;

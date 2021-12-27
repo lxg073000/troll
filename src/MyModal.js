@@ -21,7 +21,7 @@ const MyModal = forwardRef(({ children }, ref) => {
             onClick={() => setIsOpen((prev) => !prev)}
           ></div>
         </div>,
-        document.getElementById("app-body")
+        document.getElementById("dashboard-body")
       );
 });
 
